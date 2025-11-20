@@ -3,6 +3,33 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --calculator-bg: #f5f5f5;
+  --calculator-border: #e5e5e5;
+  --display-bg: #ffffff;
+  --display-text: #000000;
+  --number-bg: #ffffff;
+  --number-hover: #f0f0f0;
+  --number-text: #000000;
+  --operator-bg: #007aff;
+  --operator-hover: #0056cc;
+  --function-bg: #a6a6a6;
+  --function-hover: #8f8f8f;
+}
+
+.dark {
+  --background: #0a0a0a;
+  --foreground: #ededed;
+  --calculator-bg: #000000;
+  --calculator-border: #333333;
+  --display-bg: #000000;
+  --display-text: #ffffff;
+  --number-bg: #333333;
+  --number-hover: #404040;
+  --number-text: #ffffff;
+  --operator-bg: #ff9500;
+  --operator-hover: #cc7700;
+  --function-bg: #a6a6a6;
+  --function-hover: #8f8f8f;
 }
 
 @theme inline {
@@ -10,13 +37,6 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
 }
 
 /* Non-scroll and full-height baseline */
@@ -147,3 +167,4 @@ body {
 .animate-bounce-horizontal {
   animation: bounce-horizontal 1.5s ease-in-out infinite;
 }
+
